@@ -63,8 +63,9 @@ export let forgotPass = async(req, res)=>{
             subject:"Reset password",
             html: `
             <div>
-            <p>Link to reset your password</p>
-            <p>This Link will expire in 10 minutes</p>
+          <p>Link to reset your password</p>
+<p>This link will expire in 10 minutes. If you did not request a password reset, please ignore this email. For your security, if you believe this was a mistake or if you have any concerns, contact our support team immediately. We are here to help you 24/7.</p>
+
             
          <a href=https://carrier-fair.vercel.app/reset-password/${isExist._id}/${token} style="display: inline-block; background-color: red; color: white; padding: 10px 20px; text-align: center; text-decoration: none; border-radius: 5px; cursor: pointer;">Click here </a>
         
