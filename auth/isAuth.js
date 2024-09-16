@@ -3,6 +3,8 @@ import jwt from "jsonwebtoken";
 export function isAuth(req, res, next){
     let token = req.headers["auth-token"];
     try {
+
+        
         let token = req.headers["auth-token"];
         if (token==null) {
             return res.status(400).send({ response: "Authentication failed", ok:false });
